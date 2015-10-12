@@ -1,0 +1,58 @@
+What does compilation mean ?
+In general it means going from a high language to a lower language.
+It could be C to binary, but it could also be CoffeScript to JavsCript.
+I will be talking about compilation that generates binary files.
+
+Compiled languages go through a set of processes :
+	There are at least 5 steps, but most compilers have a lot more ( like intermediate code generation ).
+
+// Front End :
+
+	1. Preprocessing :
+		Work done to a the raw text form of the code. Rules are simple, every #if has #endif, something
+		easy to process before any real work gets done. Executing different code for different operating 
+		systems, removing comments and other things that are only useful for humans.
+	2. Lexicographical analysis:
+		This is the part where  the text is broken in to a sequence of characters. Everything that has to
+		do with specific syntax for the language that is used.
+
+// Back End :	
+
+	3. Parsing :
+		This stage is different in most compilers, it could generate to intermediate code like in the gcc implementation, but
+		in other implementations there is no intermediate code. This stage could be spit it to 20 stages depending on the idea. 
+		Has to create a execution tree at some point.
+	4. Optimization :
+		Nowadays this is the hardest and the heaviest on code base stage. You can spend an entire life time on this subject,
+		but roughly it has to find redundant/slow code or save memory on some initialization, which is done 
+		by looking in to the execution tree that the parsing stage creates.
+		
+		For example :
+			function Something()
+			{
+				var pesho = "1";
+				var gosho = "2";
+				return pesho + gosho;
+			}
+
+		Could easily become :
+			function Something()
+			{
+				return "1" + "2";
+			}
+	5. Linking and Code generation :
+		This is also a very complex, but much better understood and developed over the years stage.
+		By this stage the code must be at a very low level, meaning some assembly language like the Microsofts CIL.
+		The binary file that gets generated must be linked to external libraries, like the System.Linq, for example,
+		must be linked to your project. That means that at a point the object code must have holes in it, that get
+		filled when it's linked with the library it depends on.
+
+Interpreted languages go through some of the same processes :
+	Some of the same ideas apply here. Its obvious that lexicographical analysis is needed, and some sort of parsing, but 
+	the rest is up to debate. There could be a linking stage but maybe we just interpret all the code, or there might be no
+	optimization. There is no clear way to say what an interpreter must have, all I know is that it depends on the problem 
+	we are trying to solve.
+	The main difference is that the program that is interpreted can't run without the interpreter, unlike an executable generated
+	by a compiler.
+
+In conclusion C is obviously a compiled language !

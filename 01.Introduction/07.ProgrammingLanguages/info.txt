@@ -1,0 +1,52 @@
+1. Java :
+	One of the most used programming languages. Java was created for big enterprise projects and managed to
+	popularize the OOP style of programming. The main thing that differs Java from C is that Java uses a virtual 
+	machine to compile code, that gives it a relatively good platform independence. Thats where the slogan
+	"Write once run everywhere" comes from, which is not 100% true, but it is a certainly much better than C in that aspect.
+	
+	The virtual machine also uses a Garbage Collection System, which takes care of releasing dynamically 
+	allocated memory creating a higher level of abstraction for the programmer. 
+	The virtual machine code overhead makes it much slower than C, but more convenient and easy to use.
+2. C# :
+	Everything that applies to Java  also applies for C# when comparing it to C. C# runs on a platform called .NET, 
+	which was a well done copy of the earlier  Java VM by Microsoft, but in time became a much more refined and useful platform ( in my opinion of course ). 
+3. C++:
+	C++ is still one of the most used languages in the business, "The standard of the industry". 
+	C++ can be looked at as an extension of C which adds a TON of new features, but a more in depth look at the
+	language reveals that it has an entirely different compiler, the g++, that fixes a lot of bugs and slowness from the gcc.
+	Of course the gcc and the g++ are not the only compilers for C and C++, but I don't imagine that others are much different in this aspect.
+	
+	The G++ is done in a way that allows the user to use classes only if he/she needs to, in other words you can use 
+	pure C when you need something to be as fast as possible, but C++ when a higher level of abstraction is needed. 
+	With the fact that C++ was build to run old C code comes the negative that the class system is much harder 
+	and unintuitive than that in C#, Java, Python ... This creates a lot of hard to detect memory leak problems which are
+	not present in languages that have a Garbage Collection System. 
+	One might say that a language must have a Garbage Collection System to be a real OOP language ( again in my opinion only ).
+4. Python:
+	Python is the new and better way for writing code, or at least thats what people who are interested in creating
+	fast solutions for hard problems  might say. 
+	No types, no brackets, no compilers, nobody cares what platform the code runs on and great APIs for pretty much everything you
+	want to do with a desktop computer. 
+	The interpreter reads code from top to bottom and tries to run it, everything is dynamic and some times parts of the code run and others don't.
+	A lot of people that come from strongly typed languages have to encounter an entirely different set of problems 
+	that interpreted languages create, but at the end of the day it's worth it for the productivity that they can give.
+5. JavaScript:
+	Nothing to do with Java of course. This language is never been liked much by serious programmers, because it has a
+	lot of problems that where made standard. Created in a hurry ( 14 days allegedly... ) the ECMA Script standard was created
+	for the web browsers in a fear that Microsoft might try to create a monopoly on web development. 
+
+	Contrary to common sense this little weird language beat Javas applets and today dominates the web.
+	But why was it better than Java, it certainly isn't faster !?
+	It has an interpreter so every thing that I said for Python apples to JavaScript, but this time the Browser is the OS
+	Everywhere where there is a browser there is a JavaScript.
+	Well that is great but it also could have been achieved with Java , so why JS ?
+	JavaScript and other interpreted languages in addition to being objective  are also very functional.
+	That is an incredible advantage when it comes to creating UI, Animation, DOM manipulation and Event handling.
+	You can use mulithreading without at all thinking about it, which lowers the bar significantly and developers of all 
+	ranks can now write safe and complex code.
+
+	That is the good part, the bad is that it has a lot of bugs ( or features depending on who you ask ! ) and it's way slower than most other languages. 
+
+A general rule for any programming language is that it is as good as it's community and I tend to strongly agree with that statement.
+One more thing that makes JS a great language, there is no better community than the JS community.
+There are a lot more good and popular languages, but these are of most interest to me, you can also share some opinions and language preferences.

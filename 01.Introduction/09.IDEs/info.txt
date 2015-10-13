@@ -1,0 +1,15 @@
+1. Sublime Text IDE: 
+	This is a very simple and light text editor which becomes very powerful with the right amount of plug-ins. It's written in python and the code is available on GitHub. My favorite IDE for JavaScript development.
+
+2. WebStorm: 
+	This is an IDE for PHP, JavaScript, Ruby, Python, Objective-C etc. development. A lot of people say this is the best tool for web development, but it's a payed proprietary software. Can debug JS!
+
+3. Eclipse:
+	This is the most used IDE for Java development, but it's not just for Java programs. I prefer NetBeans.
+
+4. Code Blocks: 
+	This is a very common IDE for C/C++ development. It's a light tool and works (probably) on every platform.
+	I use this with simple embedded C code, when I don't want any pre-compiled header files.
+
+5. Komodo:
+	This is another cross-platform IDE for Web development. Python, PHP, Ruby, Perl, NodeJS, HTML, CSS and JavaScript are supported for this IDE. Also has free and paid versions. If you pay for it you can debug JS code which is a great feature!

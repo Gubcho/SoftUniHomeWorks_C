@@ -28,7 +28,7 @@ bool is_str_int(char* str) {
 
 	while (str[i] != 0) {
 		if (str[i] != new_line_code &&
-            !isdigit((unsigned char)str[i])) {
+		   !isdigit((unsigned char)str[i])) {
 			return false;
 		}
 
@@ -51,7 +51,7 @@ bool is_str_num(char* str) {
 				num_has_dot = true;
 			}
 		} else if (str[i] != new_line_code &&
-                !isdigit((unsigned char)str[i])) {
+			!isdigit((unsigned char)str[i])) {
 			return false;
 		}
 
@@ -59,4 +59,24 @@ bool is_str_num(char* str) {
 	}
 
 	return true;
+}
+
+char* trim(char* str) {
+	char* end;
+
+	while(isspace(*str)) {
+		str++;
+	}
+
+	if (*str == 0){
+		return str;
+	}
+
+	end = str + strlen(str) - 1;
+	while(end > str && isspace(*end)) {
+		end--;
+	}
+
+	*(end+1) = 0;
+	return str;
 }

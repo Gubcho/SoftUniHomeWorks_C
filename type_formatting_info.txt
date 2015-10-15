@@ -1,0 +1,9 @@
+%d -> int, short, char
+%u  -> unsigned int, unsigned short, unsigned char
+%ld -> long
+%lu -> unsigned long
+%lld -> long long
+%llu -> unsigned long long
+
+%.2f -> float
+%.2lf -> double

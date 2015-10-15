@@ -9,16 +9,22 @@ int main() {
 	char* date_arr[3];
 	char* token_buffer;
 
+	printf("Give me yout age in the format (dd.mm.yyyy) : ");
 	scanf("%s", raw_input);
 	token_buffer = strtok(raw_input, ".");
 	while (token_buffer != NULL) {
 		if (i >= 3) {
-			return 0;
+			return 1;
 		}
 
 		date_arr[i] = token_buffer;
 		token_buffer = strtok(NULL, ".");
 		i++;
+	}
+
+	if (i < 2) {
+		printf("Incorrect input format!\n");
+		return 1;
 	}
 
 	time_t time_now_raw = time( NULL );
